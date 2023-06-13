@@ -1,0 +1,174 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <title>TaskEase | Profile</title>
+        <script defer type="module" src="../scripts/resetPassword.js"></script>
+        <script defer type="module" src="../scripts/profileInfo.js"></script>
+        <script defer type="module" src="../scripts/logout.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link
+            rel="icon"
+            href="../images/taskease-icon.ico"
+            type="image/x-icon" />
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script
+            defer
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/" style="font-size: 24px">
+                TaskEase
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tasks">Home</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Profile
+                        </a>
+                        <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./profile"
+                                >My Profile
+                            </a>
+                            <a
+                                class="dropdown-item"
+                                style="cursor: pointer"
+                                id="logout">
+                                Logout</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-center">Profile</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="col">
+                                <div class="row-md-8">
+                                    <div
+                                        class="d-lg-inline font-weight-bold mb-4">
+                                        Display Name:
+                                        <input
+                                            id="display-name-input"
+                                            class="d-inline font-weight-normal border-0 mb-2"
+                                            style="
+                                                height: 37px;
+                                                padding-left: 8px;
+                                            "
+                                            disabled
+                                            value="text" />
+
+                                        <button
+                                            id="display-name-edit-btn"
+                                            type="button"
+                                            class="btn btn-info float-lg-right">
+                                            EDIT
+                                        </button>
+                                        <hr class="" />
+                                    </div>
+                                    <div class="d-inline font-weight-bold">
+                                        Username:
+                                        <p
+                                            id="username"
+                                            class="d-inline font-weight-normal">
+                                            John Doe
+                                        </p>
+                                    </div>
+
+                                    <p class="font-weight-bold">
+                                        Email:
+                                        <span
+                                            id="email"
+                                            class="font-weight-normal"></span>
+                                    </p>
+                                    <form action="">
+                                        <input
+                                            id="reset-password-input"
+                                            class="mb-2"
+                                            style="
+                                                height: 35px;
+                                                padding-left: 8px;
+                                            "
+                                            type="password"
+                                            autocomplete="on"
+                                            placeholder="••••••••••••••••"
+                                            disabled />
+
+                                        <button
+                                            class="btn btn-warning mb-1"
+                                            id="reset-password-btn">
+                                            Rest password
+                                        </button>
+
+                                        <button
+                                            class="btn btn-secondary mb-1"
+                                            id="save-pass"
+                                            style="display: none">
+                                            Save
+                                        </button>
+                                        <button
+                                            class="btn btn-info mb-1 ml-1"
+                                            style="display: none"
+                                            id="cancel">
+                                            Cancel
+                                        </button>
+                                        <p
+                                            class="text-center mt-3 text-danger"
+                                            id="error-succ-display"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="btn btn-primary"
+                            id="return-to-main-page">
+                            <i class="fa fa-home" style="font-size: 25px"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

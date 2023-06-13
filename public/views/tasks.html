@@ -1,0 +1,96 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script defer type="module" src="../scripts/tasks.js"></script>
+        <script defer type="module" src="../scripts/logout.js"></script>
+        <title>TaskEase | Tasks</title>
+        <link
+            rel="icon"
+            href="../images/taskease-icon.ico"
+            type="image/x-icon" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/" style="font-size: 24px">
+                TaskEase
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./tasks">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Profile
+                        </a>
+                        <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./profile"
+                                >My Profile
+                            </a>
+                            <a
+                                class="dropdown-item"
+                                style="cursor: pointer"
+                                id="logout">
+                                Logout</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Add some content below the navbar for demonstration purposes -->
+        <div class="container text-center" style="padding: 16px">
+            <h1>
+                <p class="text-warning d-inline-block" id="user-name">___</p>
+                To Do Tasks
+            </h1>
+        </div>
+        <div class="container text-center mt-3">
+            <form id="task-form">
+                <input
+                    type="text"
+                    class="form-check-inline w-50 pl-2 p-2"
+                    id="taskName"
+                    placeholder="Enter task name"
+                    style="border-radius: 10px; border-color: black"
+                    required />
+                <button
+                    type="submit"
+                    class="btn btn-success mb-1 p-2"
+                    style="height: 45px; border-radius: 10px">
+                    Add Task
+                </button>
+            </form>
+        </div>
+        <div class="mt-5"></div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
