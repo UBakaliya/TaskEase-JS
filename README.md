@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# [TaskEase Master](https://taskease Mastermaster.web.app/) - Task Management Application
+# [TaskEase Master](https://taskeasemaster.web.app/) - Task Management Application
 
 ## Description
 
@@ -8,7 +8,7 @@ TaskEase Master is a web-based task management application designed to help indi
 
 ## Live Demo:
 
-[TaskEase Master](https://taskease Mastermaster.web.app/)
+[TaskEase Master](https://taskeasemaster.web.app/)
 
 ## Features
 
