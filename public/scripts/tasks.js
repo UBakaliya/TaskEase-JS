@@ -146,7 +146,7 @@ const displayTask = (taskValue, tasksId) => {
 	col.appendChild(listGroup);
 
 	let listGroupItem = document.createElement("div");
-	listGroupItem.className = "list-group-item";
+	listGroupItem.className = "task-text-box list-group-item";
 	listGroup.appendChild(listGroupItem);
 
 	let innerRow = document.createElement("div");
